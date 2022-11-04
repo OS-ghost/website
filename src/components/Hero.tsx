@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom'
 
 const navigation = [
   { name: 'Docs', href: 'docs' },
@@ -48,9 +49,9 @@ export default function App() {
                 </div>
                 <div className="hidden md:ml-10 md:block md:space-x-8 md:pr-4">
                   {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="font-medium text-[#cdcdcd] hover:text-[#9cb59d]">
+                    <Link key={item.name} to={item.href} className="font-medium text-[#cdcdcd] hover:text-[#9cb59d]">
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                   <a href="https://github.com/oslabs-beta/ghost/releases" className="font-medium text-[#9cb59d] hover:text-[#798f7a]">
                     Download

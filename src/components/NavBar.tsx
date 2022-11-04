@@ -16,6 +16,7 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom'
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
@@ -45,27 +46,27 @@ export default function Example() {
                   <div className="flex space-x-4">
                     {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
                     
-                    <a href="/" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-[#9cb59d] hover:text-white">
+                    <Link to="/" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-[#9cb59d] hover:text-white">
                       Home
-                    </a>
-                    <a
-                      href="/docs"
+                    </Link>
+                    <Link
+                      to="/docs"
                       className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-[#9cb59d] hover:text-white"
                     >
                       Docs
-                    </a>
+                    </Link>
                     <a
                       href="https://github.com/oslabs-beta/ghost"
                       className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-[#9cb59d] hover:text-white"
                     >
                       GitHub
                     </a>
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-[#9cb59d] hover:text-white"
                     >
                       Blog
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
