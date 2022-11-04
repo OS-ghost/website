@@ -2,14 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import Error from './components/Error'
 import Docs from './components/Docs'
 import Demo from './components/Demo'
 import Poop from './components/Poop'
 import Pee from './components/Pee'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     // element: <App key="app" />,

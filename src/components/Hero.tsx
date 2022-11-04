@@ -3,11 +3,11 @@ import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Docs', href: '/docs' },
+  { name: 'Docs', href: 'docs' },
   { name: 'GitHub', href: 'https://github.com/oslabs-beta/ghost' },
-  { name: 'Pee', href: '/pee' },
-  { name: 'Poo', href: '/poop' },
-  { name: 'Demo', href: '/demo' },
+  { name: 'Pee', href: 'pee' },
+  { name: 'Poo', href: 'poop' },
+  { name: 'Demo', href: 'demo' },
 ]
 
 export default function App() {
