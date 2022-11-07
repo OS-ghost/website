@@ -127,7 +127,7 @@ export default function App() {
                     href="#"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-[#9cb59d] px-8 py-3 text-base font-medium text-white hover:bg-[#798f7a] md:py-4 md:px-10 md:text-lg"
                   >
-                    Mac OS
+                    Download 1
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
@@ -135,7 +135,7 @@ export default function App() {
                     href="#"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-[#bdbdbd] px-8 py-3 text-base font-medium text-[#ffffff] hover:bg-[#a6a6a6] md:py-4 md:px-10 md:text-lg"
                   >
-                    Don't download if weenie
+                    Download 2
                   </a>
                 </div>
               </div>

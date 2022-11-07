@@ -7,18 +7,19 @@ export default function BackToTop() {
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300){
+    const position = window.pageYOffset;
+    if (position > 50){
       setVisible(true)
-    } 
-    else if (scrolled <= 200){
+    }
+    else {
       setVisible(false)
     }
   };
 
-  window.addEventListener('scroll', toggleVisible);
-
-
+  React.useEffect(() => {
+    window.addEventListener('scroll', toggleVisible);
+  });
+  
   const scrollToTop = () =>{
     window.scrollTo({
       top: 0, 
@@ -36,7 +37,7 @@ export default function BackToTop() {
           left: '95%',
           top: '93%',
           zIndex: '1',
-          display: {visible} ? 'inline' : 'none',
+          display: visible ? 'inline' : 'none',
           backgroundColor: '#9cb59d',
           '&:hover': {
             backgroundColor: "#798f7a",

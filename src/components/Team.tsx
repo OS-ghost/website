@@ -1,47 +1,49 @@
 import BackToTop from "./BackToTop"
 
-const people = [
+const unsortedPeople = [
   {
-    name: `Norville Rogers`,
+    name: `Tim Kang`,
     role: 'Software Engineer',
     imageUrl:
-      'https://steamuserimages-a.akamaihd.net/ugc/1885332607282368429/5C4691C6B7A8D12927236AC404B3E2F98479A9C8/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false',
+      'https://i.postimg.cc/nLbpRygJ/shaggy.png',
     githubUrl: 'https://github.com/tkang611',
     linkedinUrl: 'https://www.linkedin.com/in/tkkang/',
   },
   {
-    name: `Scoobert Doo`,
+    name: `Lisa Tian`,
     role: 'Software Engineer',
     imageUrl:
-      'https://i.insider.com/59721be09d0918319c32a058?width=1000&format=jpeg&auto=webp',
+      'https://i.postimg.cc/kXLF6Dry/scooby.jpg',
     githubUrl: 'https://github.com/lisatiann',
     linkedinUrl: 'https://www.linkedin.com/in/lisatian-/',
   },
   {
-    name: `Daphne Blake`,
+    name: `Tracy Chang`,
     role: 'Software Engineer',
     imageUrl:
-      'http://scoobydoodaily.weebly.com/uploads/9/5/5/6/9556804/1366911262.png',
+      'https://i.postimg.cc/hPDrxhGF/daph.jpg',
     githubUrl: 'https://github.com/tracycchang',
     linkedinUrl: 'https://www.linkedin.com/in/tracycchang/',
   },
   {
-    name: `Frederick Jones`,
+    name: `Akash Patel`,
     role: 'Software Engineer',
     imageUrl:
-      'https://cdn.costumewall.com/wp-content/uploads/2015/09/fred-jones-tn.jpg',
+      'https://i.postimg.cc/VNk16vDL/fred.png',
     githubUrl: 'https://github.com/akashpatel1198',
     linkedinUrl: 'https://www.linkedin.com/in/akashpatel1198/',
   },
   {
-    name: `Velma Dinkley`,
+    name: `Krisette Odegard`,
     role: 'Software Engineer',
     imageUrl:
-      'https://cdn.costumewall.com/wp-content/uploads/2017/02/velma-dinkley.jpg',
+      'https://i.postimg.cc/1Rg5JrYs/velma.jpg',
     githubUrl: 'https://github.com/krisette',
     linkedinUrl: 'https://www.linkedin.com/in/krisette/',
   }
 ]
+
+const people = unsortedPeople.sort(() => Math.random() - 0.5)
 
 export default function Team() {
   return (

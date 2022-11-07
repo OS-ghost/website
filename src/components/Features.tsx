@@ -4,13 +4,13 @@ import { Transition } from '@headlessui/react'
 const features = [
   {
     name: 'Custom Graphs',
-    description: 'Create custom graphs with eaze',
+    description: 'Create custom graphs with eaze. Select specific date/time ranges and more!',
     icon: ChartBarIcon,
   },
   {
     name: 'More Metrics',
     description:
-      'Be able to view more metrics than other competitors',
+      'Be able to view more metrics than other competitors, including throttles and cold starts.',
     icon: CogIcon,
   },
   {
@@ -22,7 +22,7 @@ const features = [
   {
     name: 'More Stuff (poop)',
     description:
-      'A witch knocks on ur door',
+      'A witch knocks on ur door :^) ... also nice chain',
     icon: CloudIcon,
   },
 ]
