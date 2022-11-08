@@ -5,6 +5,7 @@ import js from 'react-syntax-highlighter/dist/esm/languages/hljs/javascript';
 import bash from 'react-syntax-highlighter/dist/esm/languages/hljs/bash';
 import { solarizedLight } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import BackToTop from './BackToTop';
+import Footer from './Footer'
 
 SyntaxHighlighter.registerLanguage('javascript', js);
 SyntaxHighlighter.registerLanguage('bash', bash);
@@ -24,7 +25,7 @@ export default function Docs() {
     <div>
       <NavBar />
       <BackToTop />
-      <div className="w-99vh min-h-screen bg-[#686868] flex flex-row p-4 text-white">
+      <div className="w-99vh min-h-screen bg-[#686868] flex flex-row p-6 text-white">
         <div className="flex-shrink-0 w-[150px]">
           <ul><li className="text-[#9cb59d]">Table of contents:</li>
             <li><a href="#introduction">Introduction</a></li>
@@ -32,13 +33,14 @@ export default function Docs() {
             <li><a href="#configuration">Configuration</a></li>
             <li><a href="#metrics">Metrics</a></li>
             <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#permissions">Permissions</a></li>
             <li><a href="#tech">Technologies Used</a></li>
             <li><a href="#contribute">Contribute</a></li>
           </ul>
         </div>
 
 
-        <div className="flex-auto p-2">
+        <div className="flex-auto pl-4 pr-4">
           <h1 id="introduction" className="text-4xl">Introduction</h1>
           <p>
             Now that you have downloaded ghost, let's get started!
@@ -50,8 +52,8 @@ export default function Docs() {
 
           <h1 id="getting-started" className="text-4xl">Getting Started</h1>
           <p>
-            After downloading ghost, log into Amazaon Web Services (AWS). 
-            Ghost works best when the AWS Command Line Interface CLI is installed on your computer.
+            After downloading ghost, log into Amazon Web Services (AWS). 
+            Ghost works best when the AWS Command Line Interface (CLI) is installed on your computer.
           </p>
           <p>
             <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">
@@ -86,6 +88,12 @@ export default function Docs() {
           <p>
             To view any graphs, first select the Lambda Function you would like to view metrics for. 
             Press 'Your Lambda Functions' on the left menu, then click the 'METRICS' button under the Lambda Function.
+            <br></br>
+            For customized graphs, select the Lambda Function you would like to create a custom graph for and view its metrics.
+            Then click the orange'CREATE GRAPH' button in the top right corner to display the graph creation interface.
+            Enter a title, select a metric, graph type, date/time range (end time must be within 24 hours from the start time),
+            and then hit the 'SUBMIT' button. 
+
           </p>
           <br></br>
 
@@ -94,10 +102,16 @@ export default function Docs() {
           <p>
             To view the pricing calculator and previous billing history, first select the Lambda Function you would
             like to view pricing data for. Click the 'PRICING' button under the Lambda Function. This will bring up
-            the pricing calculator. Select type, metric,         
+            the pricing calculator. Select type, memory size, storage size, billed duration, and total invocations.         
             <br></br>
-            To view past billing history, click the 'History' tab when you are in the pricing calculator interface for 
+            To view past billing history, click the 'HISTORY' tab when you are in the pricing calculator interface for 
             that Lambda function. Select your month and year, 
+          </p>
+          <br></br>
+
+          <h1 id="permissions" className="text-4xl">Permissions</h1>
+          <p>
+            How to adjust/select permissions. 
           </p>
           <br></br>
 
@@ -106,8 +120,7 @@ export default function Docs() {
             <li>Electron</li>
             <li>TypeScript</li>
             <li>React</li>
-            <li>React Router</li>
-            <li>Node</li>
+            <li>Node.js</li>
             <li>Chart.js</li>
             <li>MaterialUI</li>
             <li>Tailwind CSS</li>
@@ -116,10 +129,18 @@ export default function Docs() {
 
           <h1 id="contribute" className="text-4xl">Contribute</h1>
           <p>
-            How to contribute to the Open Source community!
+            Interested in contributing to ghost or the Open Source community?
+            The following is a list of features that the ghost team has either started or would like to implement.
+            If you also have additional ideas, feel free to iterate off of ghost and implement those features!
+          </p>
+          <p>
+            <li>Testing</li>
+            <li>Other stuff</li>
+            <li>Season 5 Silicon Valley</li>
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import NavBar from './NavBar'
+import NavBar from './NavBar';
+import Footer from './Footer';
 
 export default function Demo() {
 
@@ -33,6 +34,7 @@ export default function Demo() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }
