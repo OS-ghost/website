@@ -6,6 +6,7 @@ import bash from 'react-syntax-highlighter/dist/esm/languages/hljs/bash';
 import { solarizedLight } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import BackToTop from './BackToTop';
 import Footer from './Footer'
+import { positions } from '@mui/system';
 
 SyntaxHighlighter.registerLanguage('javascript', js);
 SyntaxHighlighter.registerLanguage('bash', bash);
@@ -25,9 +26,9 @@ export default function Docs() {
     <div>
       <NavBar />
       <BackToTop />
-      <div className="w-99vh min-h-screen bg-[#686868] flex flex-row p-6 text-white">
-        <div className="flex-shrink-0 w-[150px]">
-          <ul><li className="text-[#9cb59d]">Table of contents:</li>
+      <div className="w-99vh min-h-screen bg-[#686868] p-6 flex flex-row text-white">
+        <div className="flex-shrink-0 fixed w-[180px] mt-[60px] pl-3 pr-4 font-bold text-white" >
+          <ul>
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#getting-started">Getting started</a></li>
             <li><a href="#configuration">Configuration</a></li>
@@ -40,8 +41,8 @@ export default function Docs() {
         </div>
 
 
-        <div className="flex-auto pl-4 pr-4">
-          <h1 id="introduction" className="text-4xl">Introduction</h1>
+        <div className="flex-shrink-1 w-[1200px] pt-[60px] pl-[200px] pr-4">
+        <h1 id="introduction" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Introduction</h1>
           <p>
             Now that you have downloaded ghost, let's get started!
             <SyntaxHighlighter children={code1} language="javascript" style={ solarizedLight } />
@@ -50,47 +51,45 @@ export default function Docs() {
           <br></br>
 
 
-          <h1 id="getting-started" className="text-4xl">Getting Started</h1>
+          <h1 id="getting-started" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Getting Started</h1>
           <p>
             After downloading ghost, log into Amazon Web Services (AWS). 
             Ghost works best when the AWS Command Line Interface (CLI) is installed on your computer.
           </p>
           <p>
+          <a href="https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26state%3DhashArgsFromTB_us-west-2_3def78f93219f346&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=8I-LvSUOJq5oXg_UEBENvX3DmGuddz2I9ScmMDvYY64&code_challenge_method=SHA-256">
+            <button className="rounded-md border border-transparent m-2 bg-[#9cb59d] px-8 py-3 text-base font-medium text-white hover:bg-[#798f7a] md:py-4 md:px-10 md:text-lg">Log into AWS</button>
+            </a>
             <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">
-            <button className="rounded-md border border-transparent m-2 bg-[#9cb59d] px-8 py-3 text-base font-medium text-white hover:bg-[#798f7a] md:py-4 md:px-10 md:text-lg">Install AWS CLI</button>
+            <button className="items-center justify-center rounded-md border border-transparent bg-[#bdbdbd] px-8 py-3 text-base font-medium text-[#ffffff] hover:bg-[#a6a6a6] md:py-4 md:px-10 md:text-lg">Install AWS CLI</button>
             </a>
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Fermentum iaculis eu non diam. Fusce id velit ut tortor
-            pretium viverra suspendisse. Lobortis mattis aliquam faucibus purus in massa tempor nec feugiat.
-            Eget nunc scelerisque viverra mauris in. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim
-            cras tincidunt. Tempus urna et pharetra pharetra massa massa. Feugiat in fermentum posuere urna.
-            Mauris pharetra et ultrices neque ornare. Justo donec enim diam vulputate ut pharetra sit amet aliquam.
-            Morbi blandit cursus risus at ultrices mi tempus imperdiet nulla. Lacinia quis vel eros donec ac odio.
-            Ut consequat semper viverra nam libero justo laoreet sit amet. Neque sodales ut etiam sit amet.
+            Some more mumbo jumbo about getting started after logging in and installing AWS CLI.
           </p>
           <br></br>
 
 
-          <h1 id="configuration" className="text-4xl">Configuration</h1>
+          <h1 id="configuration" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Configuration</h1>
           <p>
             Configure the AWS CLI with your user profile in your terminal of choice.
             <SyntaxHighlighter children={ code2 } language="bash" style={ solarizedLight } />
-            You will need your security credentials (Access Key ID and Secret Access Key), the default AWS Region,
-            and the default output format. You can just press 'enter' if the default values match yours.
+            You will need your security credentials (Access Key ID and Secret Access Key), AWS Region,
+            and output format. You can just press 'enter' if the default values match yours.
             <SyntaxHighlighter children={ code3 } language="bash" style={ solarizedLight } />
           </p> 
           <br></br>
 
 
-          <h1 id="metrics" className="text-4xl">Metrics</h1>
+          <h1 id="metrics" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Metrics</h1>
           <p>
-            To view any graphs, first select the Lambda Function you would like to view metrics for. 
+            To view any graphs or data, you need to first select the Lambda Function you would like to view metrics for. 
             Press 'Your Lambda Functions' on the left menu, then click the 'METRICS' button under the Lambda Function.
-            <br></br>
+          </p>
+          <br></br>
+          <p>
             For customized graphs, select the Lambda Function you would like to create a custom graph for and view its metrics.
-            Then click the orange'CREATE GRAPH' button in the top right corner to display the graph creation interface.
+            Then click the orange'CREATE GRAPH' button in the top right corner to display the graph creation user interface.
             Enter a title, select a metric, graph type, date/time range (end time must be within 24 hours from the start time),
             and then hit the 'SUBMIT' button. 
 
@@ -98,24 +97,28 @@ export default function Docs() {
           <br></br>
 
 
-          <h1 id="pricing" className="text-4xl">Pricing</h1>
+          <h1 id="pricing" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Pricing</h1>
           <p>
             To view the pricing calculator and previous billing history, first select the Lambda Function you would
-            like to view pricing data for. Click the 'PRICING' button under the Lambda Function. This will bring up
-            the pricing calculator. Select type, memory size, storage size, billed duration, and total invocations.         
-            <br></br>
-            To view past billing history, click the 'HISTORY' tab when you are in the pricing calculator interface for 
-            that Lambda function. Select your month and year, 
+            like to view pricing data for from the left menu. Click the 'PRICING' button under the specific Lambda Function.
+            This will bring up the pricing calculator. Select type, memory size, storage size, billed duration, and total invocations. 
+            Click the 'Calculate Price' button when you are ready.        
+          </p>
+          <br></br>
+          <p>
+            To view past billing history, click the 'HISTORY' tab when you are in the pricing calculator user interface for 
+            that specific Lambda function. Select your month and year then click 'Submit'. Your previous total cost for that month
+            will be displayed.
           </p>
           <br></br>
 
-          <h1 id="permissions" className="text-4xl">Permissions</h1>
+          <h1 id="permissions" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Permissions</h1>
           <p>
             How to adjust/select permissions. 
           </p>
           <br></br>
 
-          <h1 id="tech" className="text-4xl">Technologies Used</h1>
+          <h1 id="tech" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Technologies Used</h1>
           <p>
             <li>Electron</li>
             <li>TypeScript</li>
@@ -127,7 +130,7 @@ export default function Docs() {
           </p>
           <br></br>
 
-          <h1 id="contribute" className="text-4xl">Contribute</h1>
+          <h1 id="contribute" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Contribute</h1>
           <p>
             Interested in contributing to ghost or the Open Source community?
             The following is a list of features that the ghost team has either started or would like to implement.

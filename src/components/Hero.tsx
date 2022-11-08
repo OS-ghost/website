@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 
 const navigation = [
   { name: 'Docs', href: 'docs' },
-  { name: 'GitHub', href: 'https://github.com/oslabs-beta/ghost' },
   { name: 'Pee', href: 'pee' },
   { name: 'Poo', href: 'poop' },
   { name: 'Demo', href: 'demo' },
+  { name: 'GitHub', href: 'https://github.com/oslabs-beta/ghost' },
 ]
 
 export default function App() {
@@ -115,8 +115,6 @@ export default function App() {
             <div className="sm:text-center lg:text-left">
               <h1 className="font-bold tracking-tight text-[#ffffff] sm:text-5xl md:text-6xl">
                 <span className="bg-gradient-to-r from-gray-50 to-gray-500 font-bold bg-clip-text text-transparent text-7xl">ghost</span>
-                {/* <span className="block xl:inline ">Data to enrich your</span>{' '}
-                <span className="block text-[#9cb59d] xl:inline">RAW DOGS!</span> */}
               </h1>
               <p className="mt-3 text-base text-[#ffffff] sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
                 An AWS Lambda metrics monitoring tool. 

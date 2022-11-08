@@ -7,8 +7,10 @@ export default function Demo() {
   return (
     <div>
       <NavBar />
-      <div className="flex items-center bg-[#686868] h-screen flex-col">
-      <div className="text-4xl text-white block p-5 mt-16">Spam click the button for your cohort below!</div>
+      <div className="flex items-center bg-[#686868] pt-[150px] h-screen flex-col">
+      <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Spam click the button for your cohort below!</h1>
+      <br></br>
       <div>
         <img
         src="https://media.tenor.com/7gUwUBvlgqAAAAAC/red-button-spam.gif"
