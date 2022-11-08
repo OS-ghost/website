@@ -9,12 +9,14 @@ import BackToTop from './BackToTop';
 SyntaxHighlighter.registerLanguage('javascript', js);
 SyntaxHighlighter.registerLanguage('bash', bash);
 
-const code1 = `poop.forEach((poopi) => butts.farts(poopi))`;
+const code1 = `npm install`;
 const code2 = `aws configure`;
-const code3 = `AWS Access Key ID:
+const code3 = 
+`AWS Access Key ID:
 AWS Secret Access Key:
 Default region name [us-west-1]:
 Default output format [json]:`;
+
 
 export default function Docs() {
 
@@ -39,9 +41,9 @@ export default function Docs() {
         <div className="flex-auto p-2">
           <h1 id="introduction" className="text-4xl">Introduction</h1>
           <p>
-            Have you ever wanted to pee pee and poo poo? Well, now you can! 
-            We will walk you through the steps on how to pee and poo in the toilet and sometimes both.
+            Now that you have downloaded ghost, let's get started!
             <SyntaxHighlighter children={code1} language="javascript" style={ solarizedLight } />
+            Some more stuff about ghost ... Perhaps more information that would make sense under introduction.
           </p>
           <br></br>
 
