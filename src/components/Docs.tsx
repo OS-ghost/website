@@ -123,6 +123,7 @@ export default function Docs() {
             <li>Electron</li>
             <li>TypeScript</li>
             <li>React</li>
+            <li>React Router</li>
             <li>Node.js</li>
             <li>Chart.js</li>
             <li>MaterialUI</li>

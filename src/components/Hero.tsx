@@ -8,7 +8,6 @@ const navigation = [
   { name: 'Pee', href: 'pee' },
   { name: 'Poo', href: 'poop' },
   { name: 'Demo', href: 'demo' },
-  { name: 'GitHub', href: 'https://github.com/oslabs-beta/ghost' },
 ]
 
 export default function App() {
@@ -53,6 +52,9 @@ export default function App() {
                       {item.name}
                     </Link>
                   ))}
+                  <a href="https://github.com/oslabs-beta/ghost/" className="font-medium text-[#cdcdcd] hover:text-[#9cb59d]">
+                    GitHub
+                  </a>
                   <a href="https://github.com/oslabs-beta/ghost/releases" className="font-medium text-[#9cb59d] hover:text-[#798f7a]">
                     Download
                   </a>
@@ -89,19 +91,23 @@ export default function App() {
                       </Popover.Button>
                     </div>
                   </div>
+
+                  {/* MOBILE MENU CONTENTS */}
                   <div className="space-y-1 px-2 pt-2 pb-3">
                     {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-[#9cb59d]"
-                      >
+                      <Link key={item.name} to={item.href} className="block rounded-md px-3 py-2 text-center font-medium text-gray-900 hover:bg-gray-50 hover:text-[#9cb59d]">
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                   <a
-                    href="#"
+                    href="https://github.com/oslabs-beta/ghost"
+                    className="block w-full px-5 py-3 text-center font-medium text-gray-900 hover:bg-gray-50 hover:text-[#9cb59d]"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href="https://github.com/oslabs-beta/ghost"
                     className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-[#9cb59d] hover:bg-gray-100"
                   >
                     Download

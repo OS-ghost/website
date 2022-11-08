@@ -1,26 +1,13 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
+
 
 export default function Example() {
   return (
@@ -30,6 +17,7 @@ export default function Example() {
           <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="flex items-center px-2 lg:px-0">
+                {/* GHOST LOGO TOP LEFT */}
                 <div className="flex-shrink-0">
                   <img
                     className="block h-8 w-auto lg:hidden hover:-translate-y-1 hover:rotate-360 duration-300"
@@ -42,10 +30,10 @@ export default function Example() {
                     alt="Your Company"
                   />
                 </div>
+
+                {/* NORMAL WINDOW NAV BAR */}
                 <div className="hidden lg:ml-6 lg:block">
-                  <div className="flex space-x-4">
-                    {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                    
+                  <div className="flex space-x-4">                    
                     <Link to="/" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-[#9cb59d] hover:text-white">
                       Home
                     </Link>
@@ -55,21 +43,23 @@ export default function Example() {
                     >
                       Docs
                     </Link>
-                    <a
-                      href="https://github.com/oslabs-beta/ghost"
-                      className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-[#9cb59d] hover:text-white"
-                    >
-                      GitHub
-                    </a>
                     <Link
                       to="#"
                       className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-[#9cb59d] hover:text-white"
                     >
                       Blog
                     </Link>
+                    <a
+                      href="https://github.com/oslabs-beta/ghost"
+                      className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-[#9cb59d] hover:text-white"
+                    >
+                      GitHub
+                    </a>
                   </div>
                 </div>
               </div>
+
+              {/* SEARCH BAR */}
               <div className="flex flex-1 justify-center px-2 lg:ml-6 lg:justify-end">
                 <div className="w-full max-w-lg lg:max-w-xs">
                   <label htmlFor="search" className="sr-only">
@@ -89,9 +79,10 @@ export default function Example() {
                   </div>
                 </div>
               </div>
+
+              {/* MOBILE MENU BUTTON */}
               <div className="flex lg:hidden">
-                {/* Mobile menu button */}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-[#9cb59d] hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -100,6 +91,8 @@ export default function Example() {
                   )}
                 </Disclosure.Button>
               </div>
+
+              {/* DOWNLOAD BUTTON ON TOP RIGHT */}
               <div className="hidden lg:ml-4 lg:block">
                 <div className="flex items-center">
                   <a href="https://github.com/oslabs-beta/ghost/releases">
@@ -116,40 +109,49 @@ export default function Example() {
             </div>
           </div>
 
+          {/* MOBILE MENU CONTENTS */}
           <Disclosure.Panel className="lg:hidden">
-            <div className="space-y-1 px-2 pt-2 pb-3">
-              {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
+            <div className="space-y-1 px-2 pt-2 pb-3 text-center">
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-[#9cb59d] hover:text-white"
+                className="block rounded-md px-3 py-2 text-center font-medium text-white hover:bg-[#9cb59d] hover:text-white"
               >
                 Home
               </Disclosure.Button>
+
               <Disclosure.Button
                 as="a"
-                href="#"
-                className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-[#9cb59d] hover:text-white"
-              >
-                GitHub
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-[#9cb59d] hover:text-white"
+                href="docs"
+                className="block rounded-md px-3 py-2 text-center font-medium text-white hover:bg-[#9cb59d] hover:text-white"
               >
                 Docs
               </Disclosure.Button>
+
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-[#9cb59d] hover:text-white"
+                className="block rounded-md px-3 py-2 text-center font-medium text-white hover:bg-[#9cb59d] hover:text-white"
+              >
+                Blog
+              </Disclosure.Button>
+
+              <Disclosure.Button
+                as="a"
+                href="https://github.com/oslabs-beta/ghost"
+                className="block rounded-md px-3 py-2 text-center font-medium text-white hover:bg-[#9cb59d] hover:text-white"
+              >
+                GitHub
+              </Disclosure.Button>
+
+              <Disclosure.Button
+                as="a"
+                href="#"
+                className="block rounded-md px-3 py-2 text-center font-medium text-white bg-[#9cb59d] hover:bg-[#798f7a] hover:text-white"
               >
                 Download
               </Disclosure.Button>
-
             </div>
-            
           </Disclosure.Panel>
         </>
       )}
