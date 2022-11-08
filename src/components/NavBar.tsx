@@ -105,7 +105,7 @@ export default function Example() {
                   <a href="https://github.com/oslabs-beta/ghost/releases">
                   <button
                     type="button"
-                    className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 hover:bg-[#798f7a]"
+                    className="rounded-md bg-[#9cb59d] px-3 py-2 text-sm font-medium text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2  hover:bg-[#798f7a]"
                   >
                     <span className="sr-only">Download</span>
                     Download
@@ -122,48 +122,34 @@ export default function Example() {
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+                className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-[#9cb59d] hover:text-white"
               >
                 Home
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-[#9cb59d] hover:text-white"
               >
                 GitHub
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
-                className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-[#9cb59d] hover:text-white"
               >
                 Docs
               </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="#"
+                className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-[#9cb59d] hover:text-white"
+              >
+                Download
+              </Disclosure.Button>
 
             </div>
-            <div className="border-t border-gray-700 pt-4 pb-3">
-              <div className="flex items-center px-5">
-                <div className="flex-shrink-0">
-                  <img
-                    className="h-10 w-10 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  />
-                </div>
-                <div className="ml-3">
-                  <div className="text-base font-medium text-white">Tom Cook</div>
-                  <div className="text-sm font-medium text-gray-400">tom@example.com</div>
-                </div>
-                <button
-                  type="button"
-                  className="ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                >
-                  <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
-              </div>
-            </div>
+            
           </Disclosure.Panel>
         </>
       )}

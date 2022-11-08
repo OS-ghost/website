@@ -11,6 +11,10 @@ SyntaxHighlighter.registerLanguage('bash', bash);
 
 const code1 = `poop.forEach((poopi) => butts.farts(poopi))`;
 const code2 = `aws configure`;
+const code3 = `AWS Access Key ID:
+AWS Secret Access Key:
+Default region name [us-west-1]:
+Default output format [json]:`;
 
 export default function Docs() {
 
@@ -26,6 +30,7 @@ export default function Docs() {
             <li><a href="#configuration">Configuration</a></li>
             <li><a href="#metrics">Metrics</a></li>
             <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#tech">Technologies Used</a></li>
             <li><a href="#contribute">Contribute</a></li>
           </ul>
         </div>
@@ -36,8 +41,6 @@ export default function Docs() {
           <p>
             Have you ever wanted to pee pee and poo poo? Well, now you can! 
             We will walk you through the steps on how to pee and poo in the toilet and sometimes both.
-          </p>
-          <p>
             <SyntaxHighlighter children={code1} language="javascript" style={ solarizedLight } />
           </p>
           <br></br>
@@ -45,11 +48,13 @@ export default function Docs() {
 
           <h1 id="getting-started" className="text-4xl">Getting Started</h1>
           <p>
-            Log into Amazaon Web Services (AWS)
+            After downloading ghost, log into Amazaon Web Services (AWS). 
             Ghost works best when the AWS Command Line Interface CLI is installed on your computer.
-          <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">
+          </p>
+          <p>
+            <a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html">
             <button className="rounded-md border border-transparent m-2 bg-[#9cb59d] px-8 py-3 text-base font-medium text-white hover:bg-[#798f7a] md:py-4 md:px-10 md:text-lg">Install AWS CLI</button>
-          </a>
+            </a>
           </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -66,27 +71,46 @@ export default function Docs() {
 
           <h1 id="configuration" className="text-4xl">Configuration</h1>
           <p>
-            How to configure your AWS account to our application.
             Configure the AWS CLI with your user profile in your terminal of choice.
-            You will need your security credentials, the default output format, and the default AWS Region.
-          </p>
-          <p>
             <SyntaxHighlighter children={ code2 } language="bash" style={ solarizedLight } />
-          </p>
+            You will need your security credentials (Access Key ID and Secret Access Key), the default AWS Region,
+            and the default output format. You can just press 'enter' if the default values match yours.
+            <SyntaxHighlighter children={ code3 } language="bash" style={ solarizedLight } />
+          </p> 
           <br></br>
 
 
           <h1 id="metrics" className="text-4xl">Metrics</h1>
           <p>
-            How to view metrics for your lambda function as well as set up custom graphs.
+            To view any graphs, first select the Lambda Function you would like to view metrics for. 
+            Press 'Your Lambda Functions' on the left menu, then click the 'METRICS' button under the Lambda Function.
           </p>
+          <br></br>
 
 
           <h1 id="pricing" className="text-4xl">Pricing</h1>
           <p>
-            How to use our pricing calculator as well as viewing past billing history.
+            To view the pricing calculator and previous billing history, first select the Lambda Function you would
+            like to view pricing data for. Click the 'PRICING' button under the Lambda Function. This will bring up
+            the pricing calculator. Select type, metric,         
+            <br></br>
+            To view past billing history, click the 'History' tab when you are in the pricing calculator interface for 
+            that Lambda function. Select your month and year, 
           </p>
+          <br></br>
 
+          <h1 id="tech" className="text-4xl">Technologies Used</h1>
+          <p>
+            <li>Electron</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>React Router</li>
+            <li>Node</li>
+            <li>Chart.js</li>
+            <li>MaterialUI</li>
+            <li>Tailwind CSS</li>
+          </p>
+          <br></br>
 
           <h1 id="contribute" className="text-4xl">Contribute</h1>
           <p>
