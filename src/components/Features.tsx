@@ -20,7 +20,7 @@ const features = [
     icon: CalculatorIcon,
   },
   {
-    name: 'More Stuff (poop)',
+    name: 'Permissions',
     description:
       'A witch knocks on ur door :^) ... also nice chain',
     icon: CloudIcon,

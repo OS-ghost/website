@@ -85,12 +85,13 @@ export default function Docs() {
           <p>
             To view any graphs or data, you need to first select the Lambda Function you would like to view metrics for. 
             Press 'Your Lambda Functions' on the left menu, then click the 'METRICS' button under the Lambda Function.
+            Here are some basic metrics of your Lambda Function. 
           </p>
           <br></br>
           <p>
-            For customized graphs, select the Lambda Function you would like to create a custom graph for and view its metrics.
-            Then click the orange'CREATE GRAPH' button in the top right corner to display the graph creation user interface.
-            Enter a title, select a metric, graph type, date/time range (end time must be within 24 hours from the start time),
+            For customized graphs and to see more metrics, select the Lambda Function you would like to create a custom graph for and view its metrics. 
+            Then click the orange'CREATE GRAPH' button in the top right corner to display the graph creation user interface. 
+            Enter a title, select a metric, graph type, date/time range (end time must be within 24 hours from the start time), 
             and then hit the 'SUBMIT' button. 
 
           </p>
@@ -99,22 +100,31 @@ export default function Docs() {
 
           <h1 id="pricing" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Pricing</h1>
           <p>
-            To view the pricing calculator and previous billing history, first select the Lambda Function you would
-            like to view pricing data for from the left menu. Click the 'PRICING' button under the specific Lambda Function.
+            To view the pricing calculator and previous billing history, first select the Lambda Function you would 
+            like to view pricing data for from the left menu. Click the 'PRICING' button under the specific Lambda Function. 
             This will bring up the pricing calculator. Select type, memory size, storage size, billed duration, and total invocations. 
-            Click the 'Calculate Price' button when you are ready.        
+            Click the 'CALCULATE PRICE' button when you are ready.        
           </p>
           <br></br>
           <p>
             To view past billing history, click the 'HISTORY' tab when you are in the pricing calculator user interface for 
-            that specific Lambda function. Select your month and year then click 'Submit'. Your previous total cost for that month
+            that specific Lambda function. Select your month and year then click 'SUBMIT'. Your previous total cost for that month 
             will be displayed.
           </p>
           <br></br>
 
           <h1 id="permissions" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Permissions</h1>
           <p>
-            How to adjust/select permissions. 
+            Select the Lambda Function you would like to view/edit permissions for in the left menu. 
+            Under the selected Lambda Function, click the 'PERMISSIONS' button. This will show the permissions UI and 
+            'LIST OF PERMISSIONS' is the default tab. Here you can view all your permissions' information. If you want to delete any, 
+            simply click on the 'DELETE PERMISSION' button under the specific permission you wish to delete. 
+          </p>
+          <br></br>
+          <p>
+            To add permissions, click on the 'ADD NEW PERMISSIONS' tab on top. Enter a Statement ID (cannot contain spaces), select an action, 
+            add a Principal, Principal Organization ID (optional), and then click 'ADD PERMISSION'. Your new permission has been 
+            added and can be seen on the 'LIST OF PERMISSIONS' tab now!
           </p>
           <br></br>
 
@@ -133,12 +143,13 @@ export default function Docs() {
 
           <h1 id="contribute" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Contribute</h1>
           <p>
-            Interested in contributing to ghost or the Open Source community?
-            The following is a list of features that the ghost team has either started or would like to implement.
-            If you also have additional ideas, feel free to iterate off of ghost and implement those features!
+            Interested in contributing to ghost or the Open Source community? 
+            The following is a list of features that the ghost team has either started or would like to implement. 
+            If you also have additional ideas, feel free to iterate off of ghost and implement those features! 
           </p>
           <p>
             <li>Testing</li>
+            <li>Alerts</li>
             <li>Other stuff</li>
             <li>Season 5 Silicon Valley</li>
           </p>

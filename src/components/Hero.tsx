@@ -124,6 +124,8 @@ export default function App() {
               </h1>
               <p className="mt-3 text-base text-[#ffffff] sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
                 An AWS Lambda metrics monitoring tool. 
+                <br></br>
+                <i>Accelerated by OSLabs Beta</i>
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
@@ -143,9 +145,6 @@ export default function App() {
                   </a>
                 </div>
               </div>
-              <p className="mt-3 text-base text-[#cdcdcd] sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                <i>Accelerated by OSLabs Beta</i>
-              </p>
             </div>
             
           </main>
@@ -154,8 +153,8 @@ export default function App() {
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-          src="https://i.postimg.cc/XJr9HsVn/Screen-Shot-2022-11-03-at-3-30-24-PM.png"
-          alt=""
+          src="https://i.postimg.cc/SybS1Pjg/Screen-Shot.png"
+          alt="https://i.postimg.cc/XJr9HsVn/Screen-Shot-2022-11-03-at-3-30-24-PM.png"
         />
       </div>
     </div>
