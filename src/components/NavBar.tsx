@@ -20,14 +20,14 @@ export default function Example() {
                 {/* GHOST LOGO TOP LEFT */}
                 <div className="flex-shrink-0">
                   <img
-                    className="block h-8 w-auto lg:hidden hover:-translate-y-1 hover:rotate-360 duration-300"
+                    className="block h-8 w-auto lg:hidden hover:animate-[wiggle_1.5s_ease-in-out_infinite]"
                     src="https://i.postimg.cc/zf8ZDycV/ghost.png"
-                    alt="Your Company"
+                    alt="ghost"
                   />
                   <img
-                    className="hidden h-8 w-auto lg:block hover:-translate-y-1 hover:rotate-360 duration-300"
+                    className="hidden h-8 w-auto lg:block hover:animate-[wiggle_1.5s_ease-in-out_infinite]"
                     src="https://i.postimg.cc/zf8ZDycV/ghost.png"
-                    alt="Your Company"
+                    alt="ghost"
                   />
                 </div>
 

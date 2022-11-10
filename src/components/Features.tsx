@@ -4,7 +4,8 @@ import { Transition } from '@headlessui/react'
 const features = [
   {
     name: 'Custom Graphs',
-    description: 'Create custom graphs with eaze. Select specific date/time ranges and more!',
+    description: 
+      'Create custom graphs with ease. Select specific date/time ranges and more!',
     icon: ChartBarIcon,
   },
   {
@@ -16,13 +17,13 @@ const features = [
   {
     name: 'Pricing Calculator',
     description:
-      'Analyze prices using statistics parsed from AWS Lamda documentation (we basically do what CloudWatch does but better).',
+      'Have the ability to analyze prices using statistics parsed from AWS Lambda documentation.',
     icon: CalculatorIcon,
   },
   {
     name: 'Permissions',
     description:
-      'A witch knocks on ur door :^) ... also nice chain',
+      'Control permissions all in one place. No need to go to a different webpage to add or delete.',
     icon: CloudIcon,
   },
 ]

@@ -6,8 +6,6 @@ import { createHashRouter, RouterProvider } from 'react-router-dom'
 import Error from './components/Error'
 import Docs from './components/Docs'
 import Demo from './components/Demo'
-import Poop from './components/Poop'
-import Pee from './components/Pee'
 
 const router = createHashRouter([
   {
@@ -21,10 +19,6 @@ const router = createHashRouter([
         element: <Docs /> },
       { path: "demo",
         element: <Demo /> },
-      { path: "poop",
-        element: <Poop /> },
-      { path: "pee",
-        element: <Pee /> } 
     ],
   },
 ]);

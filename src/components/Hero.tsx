@@ -5,9 +5,6 @@ import { Link } from 'react-router-dom'
 
 const navigation = [
   { name: 'Docs', href: 'docs' },
-  { name: 'Pee', href: 'pee' },
-  { name: 'Poo', href: 'poop' },
-  { name: 'Demo', href: 'demo' },
 ]
 
 export default function App() {
@@ -34,7 +31,7 @@ export default function App() {
                       <span className="sr-only">Ghost</span>
                       <img
                         alt="Ghost logo"
-                        className="h-8 w-auto sm:h-10 transition ease-in-out delay-50 hover:-translate-y-1 hover:rotate-360 duration-300"
+                        className="h-8 w-auto sm:h-10 transition ease-in-out delay-50 hover:animate-[wiggle_1.5s_ease-in-out_infinite]"
                         src="https://i.postimg.cc/zf8ZDycV/ghost.png"
                       />
                     </a>
@@ -123,7 +120,7 @@ export default function App() {
                 <span className="bg-gradient-to-r from-gray-50 to-gray-500 font-bold bg-clip-text text-transparent text-7xl">ghost</span>
               </h1>
               <p className="mt-3 text-base text-[#ffffff] sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                An AWS Lambda metrics monitoring tool. 
+                An AWS Lambda metrics monitoring tool 
                 <br></br>
                 <i>Accelerated by OSLabs Beta</i>
               </p>

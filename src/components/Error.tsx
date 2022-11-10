@@ -11,10 +11,9 @@ export default function Error() {
       <main
         className="min-h-screen bg-[#686868]"
       >
-        <div className="mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-48">
-          <p className="text-base font-semibold text-black text-opacity-50"></p>
-          <h1 className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">Uh oh! Something unexpected occurred.</h1>
-          {/* put ghost picture here */}
+        <div className="flex flex-col items-center mx-auto max-w-7xl px-4 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-48">
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl mb-2">Uh oh! Something unexpected occurred.</h1>
+          <img src='https://i.postimg.cc/gcKrtv1H/ghost.png' alt='ghost picture' className='animate-[wiggle_2s_ease-in-out_infinite]' />
           <p className="mt-2 text-lg font-medium text-black text-opacity-50">
             It looks like a ghost has taken over this page.
           </p>

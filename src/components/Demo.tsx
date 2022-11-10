@@ -10,7 +10,7 @@ export default function Demo() {
       <div className="flex items-center bg-[#686868] pt-[150px] h-screen flex-col">
       <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
         Spam click the button for your cohort below!</h1>
-      <br></br>
+      <br />
       <div>
         <img
         src="https://media.tenor.com/7gUwUBvlgqAAAAAC/red-button-spam.gif"
