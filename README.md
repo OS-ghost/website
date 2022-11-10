@@ -1,5 +1,5 @@
 # Ghost
-Visit the Ghost website at _____.
+Visit the Ghost website at [ghost-metrics.io](https://os-ghost.github.io/website/).
 
 Check out Ghost, an open-source AWS Lambdra metrics visualizer, [here](https://github.com/oslabs-beta/ghost).
 
