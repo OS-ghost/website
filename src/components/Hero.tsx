@@ -136,7 +136,7 @@ export default function App() {
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href="https://github.com/oslabs-beta/ghost/releases/download/v1.0.0/ghost-1.0.0-arm64.dmg"
+                    href="https://github.com/oslabs-beta/ghost/releases/download/v1.0.0/ghost-macos.zip"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-[#9cb59d] px-8 py-3 text-base font-medium text-white hover:bg-[#798f7a] md:py-4 md:px-10 md:text-lg"
                   >
                     MacOS

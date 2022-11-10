@@ -95,7 +95,7 @@ export default function Docs() {
             Download ghost from the GitHub repository under 'Releases.' Currently, there are releases for MacOS and Windows.
           </p>
           <p>
-          <a href="https://github.com/oslabs-beta/ghost/releases/download/v1.0.0/ghost-1.0.0-arm64.dmg">
+          <a href="https://github.com/oslabs-beta/ghost/releases/download/v1.0.0/ghost-macos.zip">
             <button className="rounded-md border border-transparent m-2 bg-[#9cb59d] px-8 py-3 text-base font-medium text-white hover:bg-[#798f7a] md:py-4 md:px-10 md:text-lg">
               Mac OS</button>
             </a>
@@ -107,10 +107,11 @@ export default function Docs() {
           <p>
             On <span className="text-[#9cb59d]">MacOS</span>:
               <ol className='list-decimal ml-12 mb-1'>
-                <li>Open the .dmg file to place ghost into your Applications folder.</li>
-                <li>Click on ghost in Applications to launch the app.</li>
+                <li>Unzip the downloaded file</li>
+                <li>Right click on the ghost app (do not double click)</li>
+                <li>Click 'Open' on the popup to launch the app.</li>
+                <img src="https://i.postimg.cc/D0995J5K/macosverify.png" />
               </ol>
-            <br />
             On <span className="text-[#9cb59d]">Windows</span>:
               <ol className='list-decimal ml-12'>
                 <li>Unzip the downloaded file</li>
