@@ -59,7 +59,7 @@ export default function Example() {
 
               {/* DOWNLOAD BUTTON ON TOP RIGHT */}
               <div className="flex items-center">
-                <a href="https://github.com/oslabs-beta/ghost/releases">
+                <a href="https://github.com/oslabs-beta/ghost/releases/tag/v1.0.0">
                 <button
                   type="button"
                   className="rounded-md bg-[#9cb59d] px-3 py-2 text-sm font-medium text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2  hover:bg-[#798f7a]"

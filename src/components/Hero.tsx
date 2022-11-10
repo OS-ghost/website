@@ -55,7 +55,7 @@ export default function App() {
                   <a href="https://github.com/oslabs-beta/ghost/" className="font-medium text-[#cdcdcd] hover:text-[#9cb59d]">
                     GitHub
                   </a>
-                  <a href="https://github.com/oslabs-beta/ghost/releases" className="font-medium text-[#9cb59d] hover:text-[#798f7a]">
+                  <a href="https://github.com/oslabs-beta/ghost/releases/tag/v1.0.0" className="font-medium text-[#9cb59d] hover:text-[#798f7a]">
                     Download
                   </a>
                 </div>
@@ -113,7 +113,7 @@ export default function App() {
                     GitHub
                   </a>
                   <a
-                    href="https://github.com/oslabs-beta/ghost"
+                    href="https://github.com/oslabs-beta/ghost/releases/tag/v1.0.0"
                     className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-[#9cb59d] hover:bg-gray-100"
                   >
                     Download
@@ -136,7 +136,7 @@ export default function App() {
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href="#"
+                    href="https://github.com/oslabs-beta/ghost/releases/download/v1.0.0/ghost-1.0.0-arm64.dmg"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-[#9cb59d] px-8 py-3 text-base font-medium text-white hover:bg-[#798f7a] md:py-4 md:px-10 md:text-lg"
                   >
                     MacOS
@@ -144,7 +144,7 @@ export default function App() {
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
-                    href="#"
+                    href="https://github.com/oslabs-beta/ghost/releases/download/v1.0.0/ElectronGhostAppInstaller.zip"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-[#bdbdbd] px-8 py-3 text-base font-medium text-[#ffffff] hover:bg-[#a6a6a6] md:py-4 md:px-10 md:text-lg"
                   >
                     Windows

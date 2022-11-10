@@ -95,12 +95,12 @@ export default function Docs() {
             Download ghost from the GitHub repository under 'Releases.' Currently, there are releases for MacOS and Windows.
           </p>
           <p>
-          <a href="#">
+          <a href="https://github.com/oslabs-beta/ghost/releases/download/v1.0.0/ghost-1.0.0-arm64.dmg">
             <button className="rounded-md border border-transparent m-2 bg-[#9cb59d] px-8 py-3 text-base font-medium text-white hover:bg-[#798f7a] md:py-4 md:px-10 md:text-lg">
               Mac OS</button>
             </a>
-            <a href="#">
-            <button className="items-center justify-center rounded-md border border-transparent bg-[#bdbdbd] px-8 py-3 text-base font-medium text-[#ffffff] hover:bg-[#a6a6a6] md:py-4 md:px-10 md:text-lg">
+            <a href="https://github.com/oslabs-beta/ghost/releases/download/v1.0.0/ElectronGhostAppInstaller.zip">
+              <button className="items-center justify-center rounded-md border border-transparent bg-[#bdbdbd] px-8 py-3 text-base font-medium text-[#ffffff] hover:bg-[#a6a6a6] md:py-4 md:px-10 md:text-lg">
               Windows</button>
             </a>
           </p>
