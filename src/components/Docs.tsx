@@ -12,13 +12,20 @@ import { HashLink } from 'react-router-hash-link';
 SyntaxHighlighter.registerLanguage('javascript', js);
 SyntaxHighlighter.registerLanguage('bash', bash);
 
-const code1 = `gotcha bitch`;
+const code1 = `npm run server`;
 const code2 = `aws configure`;
 const code3 = 
 `AWS Access Key ID:
 AWS Secret Access Key:
 Default region name [us-west-1]:
 Default output format [json]:`;
+const code4 =
+`git clone https://github.com/oslabs-beta/ghost.git
+cd ghost
+npm install
+`
+const code5 =
+`npm run server`
 
 
 export default function Docs() {
@@ -32,6 +39,7 @@ export default function Docs() {
           <ul>
             <li className="py-1"><HashLink to="#getting-started">Getting started</HashLink></li>
             <li className="py-1"><HashLink to="#configuration">Configuration</HashLink></li>
+            <li className="py-1"><HashLink to="#run-server">Run the Server</HashLink></li>
             <li className="py-1"><HashLink to="#download">Download/Launch</HashLink></li>
             <li className="py-1"><HashLink to="#metrics">Metrics</HashLink></li>
             <li className="py-1"><HashLink to="#pricing">Pricing</HashLink></li>
@@ -71,6 +79,17 @@ export default function Docs() {
           </p> 
           <br /><br />
 
+          {/* IF SERVER IS NOT EXTERNALLY HOSTED, include instructions to clone repo and npm run server  */}
+          {/* but if it is hosted, they can just download and launch so we can delete the below selection */}
+          <h1 id="run-server" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Run the Server</h1>
+          <p>
+            To run the server, clone the GitHub repository to your computer. Navigate to the local directory and install the required Node modules.
+            <SyntaxHighlighter children={ code4 } language="bash" style={ solarizedLight } />
+            Once completed, run the server.
+            <SyntaxHighlighter children={ code5 } language="bash" style={ solarizedLight } />
+          </p>
+          <br /><br />
+
           <h1 id="download" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Download and Launch</h1>
           <p>
             Download ghost from the GitHub repository under 'Releases.' Currently, there are releases for MacOS and Windows.
@@ -94,7 +113,8 @@ export default function Docs() {
             <br />
             On <span className="text-[#9cb59d]">Windows</span>:
               <ol className='list-decimal ml-12'>
-                <li>Do something</li>
+                <li>Unzip the downloaded file</li>
+                <li>Double click on ghost to launch the app.</li>
               </ol>
             <br />
             Now that ghost is ready to go, let's get started!
