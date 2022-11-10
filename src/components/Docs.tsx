@@ -109,13 +109,15 @@ export default function Docs() {
               <ol className='list-decimal ml-12 mb-1'>
                 <li>Unzip the downloaded file</li>
                 <li>Right click on the ghost app (do not double click)</li>
-                <li>Click 'Open' on the popup to launch the app.</li>
+                <li>Click 'Open' on the popup to launch the app</li>
                 <img src="https://i.postimg.cc/D0995J5K/macosverify.png" />
               </ol>
             On <span className="text-[#9cb59d]">Windows</span>:
               <ol className='list-decimal ml-12'>
                 <li>Unzip the downloaded file</li>
-                <li>Double click on ghost to launch the app.</li>
+                <li>Double click on the ghost app</li>
+                <li>Click 'More Info', then a 'Run Anyways' button should appear</li>
+                <li>Click 'Run Anyways' to launch the app</li>
               </ol>
             <br />
             Now that ghost is ready to go, let's get started!
