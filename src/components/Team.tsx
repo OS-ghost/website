@@ -13,7 +13,7 @@ const unsortedPeople = [
     name: `Lisa Tian`,
     role: 'Software Engineer',
     imageUrl:
-      'https://i.postimg.cc/kXLF6Dry/scooby.jpg',
+      'https://i.postimg.cc/Vv0xSmmZ/scoobs.png',
     githubUrl: 'https://github.com/lisatiann',
     linkedinUrl: 'https://www.linkedin.com/in/lisatian-/',
   },

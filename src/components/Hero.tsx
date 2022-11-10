@@ -120,9 +120,9 @@ export default function App() {
                 <span className="bg-gradient-to-r from-gray-50 to-gray-500 font-bold bg-clip-text text-transparent text-7xl">ghost</span>
               </h1>
               <p className="mt-3 text-base text-[#ffffff] sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                An AWS Lambda metrics monitoring tool 
+                An AWS Lambda metrics monitoring tool. 
                 <br></br>
-                <i>Accelerated by OSLabs Beta</i>
+                <i>Accelerated by OS Labs as an Open-Source Project.</i>
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
