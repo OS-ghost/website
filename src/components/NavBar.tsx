@@ -42,12 +42,12 @@ export default function Example() {
                   >
                     Docs
                   </Link>
-                  <Link
-                    to="#"
+                  <a
+                    href="https://medium.com/@ghostmetricsapp/introducing-ghost-a-free-alternative-to-aws-cloudwatch-5163e7acd597"
                     className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-[#9cb59d] hover:text-white"
                   >
                     Blog
-                  </Link>
+                  </a>
                   <a
                     href="https://github.com/oslabs-beta/ghost"
                     className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-[#9cb59d] hover:text-white"

@@ -49,6 +49,9 @@ export default function App() {
                       {item.name}
                     </Link>
                   ))}
+                  <a href="https://medium.com/@ghostmetricsapp/introducing-ghost-a-free-alternative-to-aws-cloudwatch-5163e7acd597" className="font-medium text-[#cdcdcd] hover:text-[#9cb59d]">
+                    Blog
+                  </a>
                   <a href="https://github.com/oslabs-beta/ghost/" className="font-medium text-[#cdcdcd] hover:text-[#9cb59d]">
                     GitHub
                   </a>
@@ -90,13 +93,19 @@ export default function App() {
                   </div>
 
                   {/* MOBILE MENU CONTENTS */}
-                  <div className="space-y-1 px-2 pt-2 pb-3">
+                  <div className="space-y-1 px-2 pt-2">
                     {navigation.map((item) => (
                       <Link key={item.name} to={item.href} className="block rounded-md px-3 py-2 text-center font-medium text-gray-900 hover:bg-gray-50 hover:text-[#9cb59d]">
                         {item.name}
                       </Link>
                     ))}
                   </div>
+                  <a
+                    href="https://medium.com/@ghostmetricsapp/introducing-ghost-a-free-alternative-to-aws-cloudwatch-5163e7acd597"
+                    className="block w-full px-5 py-3 text-center font-medium text-gray-900 hover:bg-gray-50 hover:text-[#9cb59d]"
+                  >
+                    Blog
+                  </a>
                   <a
                     href="https://github.com/oslabs-beta/ghost"
                     className="block w-full px-5 py-3 text-center font-medium text-gray-900 hover:bg-gray-50 hover:text-[#9cb59d]"
