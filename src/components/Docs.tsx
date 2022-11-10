@@ -99,7 +99,7 @@ export default function Docs() {
             <button className="rounded-md border border-transparent m-2 bg-[#9cb59d] px-8 py-3 text-base font-medium text-white hover:bg-[#798f7a] md:py-4 md:px-10 md:text-lg">
               Mac OS</button>
             </a>
-            <a href="https://github.com/oslabs-beta/ghost/releases/download/v1.0.0/ElectronGhostAppInstaller.zip">
+            <a href="https://github.com/oslabs-beta/ghost/releases/download/v1.0.0/ghost-windows.zip">
               <button className="items-center justify-center rounded-md border border-transparent bg-[#bdbdbd] px-8 py-3 text-base font-medium text-[#ffffff] hover:bg-[#a6a6a6] md:py-4 md:px-10 md:text-lg">
               Windows</button>
             </a>

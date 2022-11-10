@@ -144,7 +144,7 @@ export default function App() {
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
-                    href="https://github.com/oslabs-beta/ghost/releases/download/v1.0.0/ElectronGhostAppInstaller.zip"
+                    href="https://github.com/oslabs-beta/ghost/releases/download/v1.0.0/ghost-windows.zip"
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-[#bdbdbd] px-8 py-3 text-base font-medium text-[#ffffff] hover:bg-[#a6a6a6] md:py-4 md:px-10 md:text-lg"
                   >
                     Windows
