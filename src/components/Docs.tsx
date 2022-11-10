@@ -108,6 +108,7 @@ export default function Docs() {
             On <span className="text-[#9cb59d]">MacOS</span>:
               <ol className='list-decimal ml-12 mb-1'>
                 <li>Unzip the downloaded file</li>
+                <li>Double click to open the 'ghost-darwin-x64' file</li>
                 <li>Right click on the ghost app (do not double click)</li>
                 <li>Click 'Open' on the popup to launch the app</li>
                 <img src="https://i.postimg.cc/D0995J5K/macosverify.png" />
