@@ -122,7 +122,7 @@ export default function App() {
               <p className="mt-3 text-base text-[#ffffff] sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
                 An AWS Lambda metrics monitoring tool. 
                 <br></br>
-                <i>Accelerated by OS Labs as an Open-Source Project.</i>
+                <i>Accelerated by <a href="https://opensourcelabs.io">OS Labs</a> as an open-source product.</i>
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
