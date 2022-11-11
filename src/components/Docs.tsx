@@ -7,7 +7,7 @@ import { solarizedLight } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import BackToTop from './BackToTop';
 import Footer from './Footer'
 import { positions } from '@mui/system';
-import { HashLink } from 'react-router-hash-link';
+import { TableOfContents } from './TableOfContents';
 
 SyntaxHighlighter.registerLanguage('javascript', js);
 SyntaxHighlighter.registerLanguage('bash', bash);
@@ -24,9 +24,34 @@ const code4 =
 cd ghost
 npm install
 `
-const code5 =
-`npm run server`
 
+const navigation = [
+  {
+    title: 'Getting started',
+    links: [
+      { title: 'Getting started', href: '#getting-started' },
+      { title: 'Configuration', href: '#configuration' },
+      { title: 'Running the server', href: '#run-server' },
+      { title: 'Download & launching the app', href: '#download' },
+    ],
+  },
+  {
+    title: 'Using the app',
+    links: [
+      { title: 'Metrics', href: '#metrics' },
+      { title: 'Pricing', href: '#pricing' },
+      { title: 'Permissions', href: '#permissions' },
+    ],
+  },
+  {
+    title: 'Contributing',
+    links: [
+      { title: 'Technologies used', href: '#tech' },
+      { title: 'Report an issue', href: '#issue' },
+      { title: 'How to contribute', href: '#contribute' },
+    ],
+  },
+]
 
 export default function Docs() {
 
@@ -34,24 +59,13 @@ export default function Docs() {
     <div>
       <NavBar />
       <BackToTop />
-      <div className="w-99vh min-h-screen bg-[#686868] p-6 flex flex-row text-white">
-        <div className="flex-shrink-0 fixed w-[180px] mt-[70px] pl-3 pr-4 font-bold text-white" >
-          <ul>
-            <li className="py-1"><HashLink to="#getting-started">Getting started</HashLink></li>
-            <li className="py-1"><HashLink to="#configuration">Configuration</HashLink></li>
-            <li className="py-1"><HashLink to="#run-server">Run the Server</HashLink></li>
-            <li className="py-1"><HashLink to="#download">Download/Launch</HashLink></li>
-            <li className="py-1"><HashLink to="#metrics">Metrics</HashLink></li>
-            <li className="py-1"><HashLink to="#pricing">Pricing</HashLink></li>
-            <li className="py-1"><HashLink to="#permissions">Permissions</HashLink></li>
-            <li className="py-1"><HashLink to="#tech">Technologies Used</HashLink></li>
-            <li className="py-1"><HashLink to="#issue">Report an Issue</HashLink></li>
-            <li className="py-1"><HashLink to="#contribute">Contribute</HashLink></li>
-          </ul>
+      <div className="w-99vh min-h-screen bg-[#686868] p-6 flex flex-row text-white snap-y">
+        <div className="flex-shrink-0 fixed w-[200px] mt-[70px] pl-3 pr-4 font-bold text-white" >
+          <TableOfContents navigation={navigation} />
         </div>
 
 
-        <div className="flex-shrink-1 w-[1200px] py-[70px] pl-[200px] pr-4">
+        <div className="flex-shrink-1 w-[1200px] py-[70px] pl-[250px] pr-4 scroll-my-24">
           <h1 id="getting-started" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Getting Started</h1>
           <p>
             First, please log into <span className="text-[#9cb59d]">Amazon Web Services</span> (AWS). 
@@ -86,7 +100,7 @@ export default function Docs() {
             To run the server, clone the GitHub repository to your computer. Navigate to the local directory and install the required Node modules.
             <SyntaxHighlighter children={ code4 } language="bash" style={ solarizedLight } />
             Once completed, run the server.
-            <SyntaxHighlighter children={ code5 } language="bash" style={ solarizedLight } />
+            <SyntaxHighlighter children={ code1 } language="bash" style={ solarizedLight } />
           </p>
           <br /><br />
 
