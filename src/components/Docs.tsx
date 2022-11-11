@@ -117,8 +117,12 @@ export default function Docs() {
               <ol className='list-decimal ml-12'>
                 <li>Unzip the downloaded file</li>
                 <li>Double click on the ghost app</li>
-                <li>Click 'More Info', then a 'Run Anyways' button should appear</li>
-                <li>Click 'Run Anyways' to launch the app</li>
+                <li>Click 'More info', then a 'Run anyway' button should appear</li>
+                <li>Click 'Run anyway' to launch the app</li>
+                <br />
+                <img src="https://i.postimg.cc/4x1HVzNV/moreinfo.png" />
+                <br />
+                <img src="https://i.postimg.cc/KYqKsxTY/runanyway.png" />
               </ol>
             <br />
             Now that ghost is ready to go, let's get started!
