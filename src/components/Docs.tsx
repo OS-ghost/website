@@ -32,7 +32,7 @@ const navigation = [
       { title: 'Getting started', href: '#getting-started' },
       { title: 'Configuration', href: '#configuration' },
       { title: 'Running the server', href: '#run-server' },
-      { title: 'Download & launching the app', href: '#download' },
+      { title: 'Download & launch the app', href: '#download' },
     ],
   },
   {
