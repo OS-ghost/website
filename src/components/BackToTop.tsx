@@ -28,14 +28,11 @@ export default function BackToTop() {
   };
 
   return (
-    <div className="rounded-md shadow">
+    <div className="rounded-md shadow fixed bottom-5 right-5 transition duration-150 ease-in-out">
       <Button
         variant='contained'
         onClick={scrollToTop}
         sx={{
-          position: 'fixed',
-          left: '95%',
-          top: '93%',
           zIndex: '1',
           display: visible ? 'inline' : 'none',
           backgroundColor: '#9cb59d',

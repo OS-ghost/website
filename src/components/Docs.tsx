@@ -59,13 +59,13 @@ export default function Docs() {
     <div>
       <NavBar />
       <BackToTop />
-      <div className="w-99vh min-h-screen bg-[#686868] p-6 flex flex-row text-white snap-y">
-        <div className="flex-shrink-0 fixed w-[200px] mt-[70px] pl-3 pr-4 font-bold text-white" >
+      <div className="w-99vh min-h-screen bg-[#686868] p-6 flex flex-col md:flex-row text-white snap-y">
+        <div className="md:flex-shrink-0 lg:flex-shrink-0 md:fixed lg:fixed md:w-[200px] lg:md:w-[200px] mt-[70px] pl-3 pr-4 font-bold text-white">
           <TableOfContents navigation={navigation} />
         </div>
 
 
-        <div className="flex-shrink-1 w-[1200px] py-[70px] pl-[250px] pr-4 scroll-my-24">
+        <div className="mt-5 md:flex-shrink-1 lg:flex-shrink-1 md:w-[1200px] lg:w-[1200px] md:py-[70px] lg:py-[70px] md:pl-[250px] lg:-[250px] md:pr-4 lg:pr-4 md:scroll-my-24 lg:scroll-my-24">
           <h1 id="getting-started" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Getting Started</h1>
           <p>
             First, please log into <span className="text-[#9cb59d]">Amazon Web Services</span> (AWS). 
