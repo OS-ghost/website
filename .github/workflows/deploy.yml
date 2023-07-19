@@ -49,3 +49,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          
+      - name: Update CNAME for custom domain
+        run: echo "www.ghost-metrics.io" > ./dist/CNAME
