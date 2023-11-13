@@ -26,7 +26,7 @@
     "react-syntax-highlighter": "^15.5.0"
   },
   "devDependencies": {
-    "@types/prismjs": "^1.26.0",
+    "@types/prismjs": "^1.26.3",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
     "@types/react-router-dom": "^5.3.3",
