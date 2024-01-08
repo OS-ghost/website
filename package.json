@@ -14,7 +14,7 @@
     "@emotion/styled": "^11.11.0",
     "@headlessui/react": "^1.7.4",
     "@heroicons/react": "^2.0.13",
-    "@mui/material": "^5.10.12",
+    "@mui/material": "^5.15.3",
     "@types/react-router-hash-link": "^2.4.5",
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.4",
